@@ -1,5 +1,4 @@
 Nucleotides = ["A", "C", "G", "T"]
-
 #Check the sequence to make sure it is a DNA string
 def validateSeq(dna_seq):
     tmpseq = dna_seq.upper()
@@ -14,3 +13,9 @@ def countNucFrequency(seq):
     for nuc in seq:
         tmpFreqDict[nuc] += 1
     return tmpFreqDict
+
+#Personal attempt to define a function to transcribe DNA to RNA. I know there is a built in function for this but I wanted to try it myself.
+def transcribeDNAtoRNA(seq):
+    for nuc in seq:
+        seq = seq.replace("T","U")
+    return seq
