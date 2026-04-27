@@ -1,3 +1,3 @@
-from scratch import *
+from ROSALINDVillage import *
 
-print(splice_positions)
+print(f"{spliced_string_of_letters_A_to_B} {spliced_string_of_letters_C_to_D}")
