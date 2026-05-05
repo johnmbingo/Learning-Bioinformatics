@@ -19,3 +19,21 @@ spliced_string_of_letters_A_to_B = string_of_letters[splice_positions['A']:splic
 spliced_string_of_letters_C_to_D = string_of_letters[splice_positions['C']:splice_positions['D']]
 
 #-------------------LOOPS-------------------    
+
+integer_input_1 = 4519
+integer_input_2 = 8751
+
+#plus 1 to make it inclusive
+integer_input = range(integer_input_1, integer_input_2 + 1)
+odd_integer_list = []
+
+#finding all odd integers in a range
+
+for i in integer_input:
+    if i % 2 == 1:
+        odd_integer_list.append(i)
+
+#summing all odd integers in a list
+print(odd_integer_list)
+print(sum(odd_integer_list))
+
