@@ -58,6 +58,7 @@ def reversecompliment(inputDNAseq):
     return ''.join([nuccompliments[nuc] for nuc in inputDNAseq])[::-1]
 
 #How do I tranlate this into a for loop that makes sense to me, create another iteration of the code
+#Might be the only way
 
 #def reversecompliment2(inputDNAseq):
     for nuc, com in nuccompliments:

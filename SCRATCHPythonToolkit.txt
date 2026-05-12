@@ -29,3 +29,15 @@ List comprehension syntax
  
     doubled_numbers = [num * 2 for num in numbers]
 
+Reading and writing files template
+
+    with open('UTube Informatics Tutorial/input.txt', 'r') as f:
+        outputFile = [line for pos,line in enumerate(
+            f.readlines()) if pos % 2 != 0]
+
+    #Translation: Return the line for every position,line in which the file is enumerated and the lines are read only if the position corresponding to the line is odd
+    #Sticking point, do note, pos, line is a tuple unpacking allowing both values to be made and used
+    #Sticking point, make sure to save the input file, writing it will completely change the file even if you tried to replace the text
+
+    with open('UTube Informatics Tutorial/output.txt', 'w') as f:
+        .write(''.join([line for line in outputFile]))
