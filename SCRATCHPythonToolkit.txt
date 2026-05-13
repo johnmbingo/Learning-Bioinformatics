@@ -5,7 +5,7 @@ Function is used to creat an index(or i) from a dictionary, the second line is a
         #if i % 2 == 1:
          #splice_positions[key] += 1 
 
-Function is using int to convert strings to integers, split to add commas between numbers, list comprehension with a four loop
+Function is using int to convert strings to integers, split to add commas between numbers, list comprehension with a for loop
 
     def string_of_integers_into_list_of_integers(specified_string):
         list_of_integers = [int(num) for num in specified_string.split()]
@@ -41,3 +41,16 @@ Reading and writing files template
 
     with open('UTube Informatics Tutorial/output.txt', 'w') as f:
         .write(''.join([line for line in outputFile]))
+
+Create a dictionary from a string with the default value being 
+    tempstringdict = dict.fromkeys(inputstring.split(), 0)
+
+Create a function that finds every word in a string and tally them up 
+    def parse(inputstring):
+    wordCountDict = {}
+    for k in inputstring.split(' '):
+        if k in wordCountDict:
+            wordCountDict[k] += 1
+        else:
+            wordCountDict[k]= 1
+    return wordCountDict

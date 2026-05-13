@@ -1,13 +1,23 @@
-def parse(inputstring):
-    tempstringdict = {}
+import random
 
-    #Need to split input string
-    #Need to ID every key in the string
-    #Associate or zip every value associated to the key
-    #Need to count every occurance of the value
+from PersonalDNAtoolkit import *
+
+
+def practicingcountingnuc(s):
+    tmpnucdict = {}
+    for nuc in list(s):
+        if nuc in tmpnucdict:
+            tmpnucdict[nuc] += 1
+        else:
+            tmpnucdict[nuc] = 1
+    return tmpnucdict
+
+#You can also use counter(list(s))
+
+print(practicingcountingnuc(randomDNAstring))
+print(randomDNAstring)
+
 
     
-    for k in inputstring:
-        tempstringdict[k] += 1
-    return tempstringdict
     
+

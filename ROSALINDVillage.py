@@ -34,6 +34,19 @@ for i in integer_input:
         odd_integer_list.append(i)
 
 #summing all odd integers in a list
-print(odd_integer_list)
-print(sum(odd_integer_list))
+#print(odd_integer_list)
+#print(sum(odd_integer_list))
 
+#----------------------------Dictionaries---------------------
+
+inputstring = "Hello, my name is John John"
+def parse(s):
+    tmpstring = {}
+    for word in s.split(' '):
+        if word in tmpstring:
+            tmpstring[word] += 1
+        else:   
+            tmpstring[word] = 1
+    return tmpstring
+
+#print(parse(inputstring))
